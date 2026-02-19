@@ -16,7 +16,7 @@ connectDB();
 app.use(express.json());
  
 app.use(cors({
-  origin: ["http://localhost:5173","https://blog-plateform-zeta.vercel.app"],
+  origin: ["https://blog-plateform-zeta.vercel.app"],
   credentials: true
 }));
 
