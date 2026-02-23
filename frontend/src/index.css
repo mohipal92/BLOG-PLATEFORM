@@ -1,0 +1,27 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Editorial typography base */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  @apply bg-ink-50 text-ink-900;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, serif;
+}
+
+/* Blog content rich text styling */
+.blog-content p  { @apply mb-4 leading-8 text-ink-700; }
+.blog-content h2 { @apply text-2xl font-bold mt-8 mb-3 font-display; }
+.blog-content h3 { @apply text-xl font-bold mt-6 mb-2 font-display; }
+.blog-content ul { @apply list-disc list-inside mb-4 text-ink-700 space-y-1; }
+.blog-content ol { @apply list-decimal list-inside mb-4 text-ink-700 space-y-1; }
+.blog-content blockquote {
+  @apply border-l-4 border-accent pl-4 italic text-ink-500 my-6;
+}
+.blog-content code {
+  @apply bg-gray-100 px-1 rounded text-sm font-mono;
+}
